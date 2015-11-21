@@ -2,18 +2,19 @@ package com.square;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class PianoActivity extends Activity {
 
@@ -24,6 +25,8 @@ public class PianoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_piano);
+		((TextView)findViewById(R.id.title)).setText("天天刮奖");
+		((TextView)findViewById(R.id.title)).setTextColor(Color.parseColor("#FF3333"));
 
 		button1 = (Button) findViewById(R.id.btn_piano);
 		button2 = (Button) findViewById(R.id.btn_back);

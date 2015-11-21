@@ -6,33 +6,7 @@
                 android:background="#FFFFFF"
                 tools:context=".MainActivity">
 
-    <RelativeLayout
-            android:id="@+id/ll_titlebar"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="#eaeaea">
-
-        <Button
-                android:id="@+id/btn_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:background="@drawable/backarrow"
-                android:layout_centerVertical="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="24dp"/>
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="蘑菇街"
-                android:textColor="#FF3366"
-                android:textSize="@dimen/textSize20"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"/>
-    </RelativeLayout>
+    <include layout="@layout/common_title" android:id="@+id/ll_titlebar"/>
 
     <RelativeLayout
             android:id="@+id/relativeLayout1"

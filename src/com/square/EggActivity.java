@@ -2,20 +2,19 @@ package com.square;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
 
 public class EggActivity extends Activity {
 
@@ -26,7 +25,8 @@ public class EggActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_egg);
-
+        ((TextView)findViewById(R.id.title)).setText("云盘");
+        ((TextView)findViewById(R.id.title)).setTextColor(Color.parseColor("#66cc00"));
 		button1 = (Button) findViewById(R.id.btn_login_cloth_grey);
 		button2 = (Button) findViewById(R.id.btn_back);
 		button2.setOnClickListener(new OnClickListener() {

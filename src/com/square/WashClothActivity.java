@@ -1,23 +1,21 @@
 package com.square;
 
-import android.R.integer;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
 
 public class WashClothActivity extends Activity {
 
@@ -30,6 +28,8 @@ public class WashClothActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_washcloth);
+		((TextView)findViewById(R.id.title)).setText("蘑菇街");
+        ((TextView)findViewById(R.id.title)).setTextColor(Color.parseColor("#FF3366"));
 
 		button1 = (Button) findViewById(R.id.btn_login_cloth_grey);
 		button2 = (Button) findViewById(R.id.btn_back);
