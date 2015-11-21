@@ -3,11 +3,7 @@
 	var $fish = $('.fish');
 	var $shakeCaptcha = $('.shake-captcha');
 	var shakeCaptcha = document.querySelector('.shake-captcha');
-<<<<<<< HEAD
 	// var output = document.querySelector('.output');
-=======
-	var output = document.querySelector('.output');
->>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 
 	var maxX = shakeCaptcha.clientWidth - fish.clientWidth;
 	var maxY = shakeCaptcha.clientHeight - fish.clientHeight;
@@ -16,13 +12,8 @@
 		var x = event.beta; // In degree in the range [-180,180]
 		var y = event.gamma; // In degree in the range [-90,90]
 
-<<<<<<< HEAD
 		// output.innerHTML = "beta : " + x + "\n";
 		// output.innerHTML += "gamma: " + y + "\n";
-=======
-		//output.innerHTML = "beta : " + x + "\n";
-		//output.innerHTML += "gamma: " + y + "\n";
->>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 
 		// Because we don't want to have the device upside down
 		// We constrain the x value to the range [-90,90]
@@ -46,11 +37,7 @@
 		fish.style.left = (maxY * y / 180 - 10) + "px";
 		var left = $(fish).offset().left;
 
-<<<<<<< HEAD
 		if (left < 70) {
-=======
-		if (left < 100) {
->>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 			$fish.addClass('animg50');
 			$fish.on('webkitAnimationEnd', function() {
 				$shakeCaptcha.trigger('failure');
@@ -58,11 +45,7 @@
 			window.removeEventListener("deviceorientation", handleOrientation, true);
 		}
 
-<<<<<<< HEAD
 		if (left > 215) {
-=======
-		if (left > 235) {
->>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 			$fish.addClass('animg150');
 			$fish.on('webkitAnimationEnd', function() {
 				$fish.hide();
