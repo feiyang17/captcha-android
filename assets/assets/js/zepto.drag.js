@@ -23,6 +23,12 @@
 					touchOffsetEdgeY = touch.pageY - draggedItemOffset.top;
 					console.log('touchOffsetEdgeX' + touchOffsetEdgeX + 'touchOffsetEdgeY' + touchOffsetEdgeY);
 					$draggedItem.trigger('dragStart');
+<<<<<<< HEAD
+
+					e.preventDefault();
+					e.stopPropagation();
+=======
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 				},
 
 				'touchmove': function(e) {
@@ -35,7 +41,11 @@
 					// if (draggedItemY < range.down && draggedItemY > range.up &&
 					// 	draggedItemX > range.left && draggedItemX < range.right) {
 					// }
+<<<<<<< HEAD
+
+=======
 					
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 					// if(draggedItemY > range.down) {
 					// 	$draggedItem.css('top', range.down + 'px');
 					// }
@@ -57,6 +67,22 @@
 						'left': left + 'px',
 						'top': top + 'px'
 					});
+<<<<<<< HEAD
+
+					$draggedItem.trigger('drag');
+					e.preventDefault();
+					e.stopPropagation();
+				},
+
+				'touchend': function(e) {
+					$draggedItem.trigger('dragEnd');
+					e.preventDefault();
+					e.stopPropagation();
+				}
+			})
+		});
+
+=======
 					
 					$draggedItem.trigger('drag');
 				},
@@ -66,5 +92,6 @@
 				}
 			})
 		});
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 	}
 })(Zepto)

@@ -44,7 +44,7 @@ public class PianoActivity extends Activity {
 		// webView.setInitialScale(0);
 		webView.addJavascriptInterface(new JSInterface(), "control");
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-		webView.loadUrl("http://10.18.230.42:8888/github.repo/captcha/washer.html");
+		webView.loadUrl("file:///android_asset/piano.html");
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
