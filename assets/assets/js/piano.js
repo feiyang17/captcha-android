@@ -66,18 +66,13 @@
 				$(this).removeClass('active');
 			},
 
-<<<<<<< HEAD
 			'tap': function() {
-=======
-			'click': function() {
->>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 				// 正在播放的音符
 				var $playingNote = $(this);
 				var index = $playingNote.data('index');
 				// 得到正在弹的音符，为了后面验证
 				var note = $playingNote.data('note') || index;
 				var keyboard = $('.keyboard').get(index - 1);
-<<<<<<< HEAD
 				console.log(note);
 
 				if (!keyboard.ended) {
@@ -86,27 +81,6 @@
 					keyboard.play();
 				}
 
-=======
-				//console.log(keyboard);
-				
-				//console.log(note);
-				//$pianoCaptcha.append(keyboard);
-				
-				//var test = keyboard.ended;
-				//$pianoCaptcha.append(test + '123);
-				
-				try {
-					//console.dir(keyboard);
-					//if (!keyboard.ended) {
-						//keyboard.currentTime = 0;
-						//keyboard.play();
-					//}
-				}catch(e) {	
-					$pianoCaptcha.append(1);
-				}
-
-				//$pianoCaptcha.append(keyboard.play);
->>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 				keyboard.play();
 
 				if (count < 4) {
