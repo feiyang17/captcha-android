@@ -12,10 +12,18 @@
 			background-color: rgb(243, 243, 243);
 			position: relative;
 			padding-top: 5px;
+<<<<<<< HEAD
+=======
+			color: #999;
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 		}
 
 		.hint {
 			padding-left: 15px;
+<<<<<<< HEAD
+=======
+			font-weight: 400;
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 		}
 
 		.piano {
@@ -79,6 +87,7 @@
 			background-color: #ccc;
 		}
 
+<<<<<<< HEAD
 	</style>
 	<link rel="stylesheet" href="assets/css/common.css">
 </head>
@@ -87,6 +96,44 @@
 		<h3 class="hint">请在琴键上弹出 <i id="code"></i></h3>
 		<ul class="piano">
 			<!-- 白键 -->
+=======
+		/*---------- 楠岃瘉 ------------*/
+        .mask {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, .75);
+			z-index: 1000;
+		}
+
+		.toast {
+			margin: 0;
+			font-size: 25px;
+			text-align: center;
+			line-height: 320px;
+			color: white;
+			text-indent: 10px;
+		}
+
+		.yes {
+			background: url(assets/images/yes.png) no-repeat 80px 50%;
+			background-size: 30px;
+		}
+
+		.no {
+			background: url(assets/images/no.png) no-repeat 80px 50%;
+			background-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="piano-captcha">
+		<h3 class="hint">请在琴键上弹出<i id="code"></i></h3>
+		<ul class="piano">
+			<!-- 鐧介敭 -->
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 			<li data-index="1"><audio class="keyboard" src="assets/media/1.mp3"></audio>1</li>
 			<li data-index="2"><audio class="keyboard" src="assets/media/2.mp3"></audio>2</li>
 			<li data-index="3"><audio class="keyboard" src="assets/media/3.mp3"></audio>3</li>
@@ -95,7 +142,11 @@
 			<li data-index="6"><audio class="keyboard" src="assets/media/6.mp3"></audio>6</li>
 			<li data-index="7"><audio class="keyboard" src="assets/media/7.mp3"></audio>7</li>
 
+<<<<<<< HEAD
 			<!-- 黑键 -->
+=======
+			<!-- 榛戦敭 -->
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 			<li class="black black2" data-index="8"><audio class="keyboard" src="assets/media/8.mp3"></audio>8</li>
 			<li class="black black3" data-index="9"><audio class="keyboard" src="assets/media/9.mp3"></audio>9</li>
 			<li class="black black4" data-note="0" data-index="10"><audio class="keyboard" src="assets/media/0.mp3"></audio>0</li>

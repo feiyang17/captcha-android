@@ -45,7 +45,11 @@ public class EggActivity extends Activity {
 		webView.addJavascriptInterface(new JSInterface(), "control");
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 		// webView.setWebChromeClient(new WebChromeClient(){});
+<<<<<<< HEAD
 		webView.loadUrl("file:///android_asset/egg.html");
+=======
+		webView.loadUrl("http://10.18.230.42:8888/github.repo/captcha/washer.html");
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {

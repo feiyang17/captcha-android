@@ -1,7 +1,12 @@
 /**
+<<<<<<< HEAD
  * @author monkindey
  * @update 2015.11.18
  * 自我感觉是写的很乱
+=======
+ * 自我感觉是写的很乱
+ * 总是在想如何实现？而不是如何完善
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
  */
 (function($) {
 	var $egg = $('.egg');
@@ -51,12 +56,21 @@
 
 	// 接到鸡蛋了
 	var getEgg = function() {
+<<<<<<< HEAD
+=======
+		$basket.addClass('get-egg');
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 		// 因为装有鸡蛋图片跟只有篮子的图片高度上不同
 		// 会导致在切换图片的时候Y轴位置会改变
 		// 这个方法不是好方法
 		$basket.css({
+<<<<<<< HEAD
 			top: $basket.offset().top - 26 + 'px'
 		}).addClass('get-egg');
+=======
+			top: $basket.offset().top - 25 + 'px'
+		});
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 	};
 
 	// 接鸡蛋
@@ -81,11 +95,19 @@
 		range: {
 			up: 0,
 			left: 0,
+<<<<<<< HEAD
 			down: eggCaptchaOffset.height - basketInitHeight,
 			// 这个实现不好，不过先实现出来吧
 			// down: 375,
 			right: eggCaptchaOffset.width - $basket.offset().width
 			// right: 280
+=======
+			// down: eggCaptchaOffset.height - basketInitHeight,
+			// 这个实现不好，不过先实现出来吧
+			down: 375,
+			// right: eggCaptchaOffset.width - $basket.offset().width
+			right: 230
+>>>>>>> f95b1b80a18ba9384225d75d4c20ae79a18ba82f
 		}
 	});
 
