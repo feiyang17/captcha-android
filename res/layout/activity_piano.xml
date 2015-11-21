@@ -1,62 +1,60 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/pianobg"
-    android:orientation="vertical"
-    tools:context=".MainActivity" >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pianobg"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/ll_titlebar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" >
+            android:id="@+id/ll_titlebar"
+            android:layout_width="match_parent"
+            android:background="#eaeaea"
+            android:layout_height="48dp">
 
         <Button
-            android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/backarrow" />
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/backarrow"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="13dp"
-            android:layout_toRightOf="@id/btn_back"
-            android:gravity="center_horizontal"
-            android:text="天天刮奖"
-            android:textColor="#FF3333"
-            android:textSize="20sp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="天天刮奖"
+                android:textColor="#FF3333"
+                android:textSize="@dimen/textSize20"/>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/piano_ll"
-        android:layout_width="380dp"
-        android:layout_height="200dp"
-        android:layout_below="@id/ll_titlebar"
-        android:layout_gravity="center"
-        android:layout_marginTop="240dp" >
+            android:id="@+id/piano_ll"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/ll_titlebar"
+            android:layout_gravity="center"
+            android:layout_marginTop="240dp">
 
         <WebView
-            android:id="@+id/cloth_webview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-             >
+                android:id="@+id/cloth_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
         </WebView>
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_piano"
-        android:layout_centerInParent="true"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/piano_ll"
-        android:layout_marginTop="15dp"
-        android:text="刮奖页面"
-        android:textColor="#fff"
-        android:background="@drawable/greybtn"
-        android:textSize="24sp" />
+            android:id="@+id/btn_piano"
+            android:layout_centerInParent="true"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/piano_ll"
+            android:layout_marginTop="15dp"
+            android:text="刮奖页面"
+            android:textColor="#fff"
+            android:background="@drawable/greybtn"
+            android:textSize="24sp"/>
 
 </RelativeLayout>
