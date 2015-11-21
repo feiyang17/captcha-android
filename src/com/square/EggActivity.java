@@ -45,7 +45,7 @@ public class EggActivity extends Activity {
 		webView.addJavascriptInterface(new JSInterface(), "control");
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 		// webView.setWebChromeClient(new WebChromeClient(){});
-		webView.loadUrl("file:///android_asset/egg.html");
+		webView.loadUrl(String.format("%segg.html", DataCenter.URL));
 
 		webView.setWebViewClient(new WebViewClient() {
 			@Override

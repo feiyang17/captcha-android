@@ -47,7 +47,7 @@ public class PianoActivity extends Activity {
 		// webView.setInitialScale(0);
 		webView.addJavascriptInterface(new JSInterface(), "control");
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-		webView.loadUrl("file:///android_asset/piano.html");
+		webView.loadUrl(String.format("%spiano.html", DataCenter.URL));
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {

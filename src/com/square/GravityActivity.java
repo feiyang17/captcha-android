@@ -48,7 +48,7 @@ public class GravityActivity extends Activity {
 		webView.addJavascriptInterface(new JSInterface(), "control");
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 		//webView.setWebChromeClient(new WebChromeClient(){});
-		webView.loadUrl("file:///android_asset/shake.html");
+		webView.loadUrl(String.format("%sshake.html", DataCenter.URL));
 		webView.setWebViewClient(new WebViewClient(){
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {

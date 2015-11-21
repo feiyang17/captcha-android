@@ -50,7 +50,7 @@ public class WashClothActivity extends Activity {
 		webView.addJavascriptInterface(new JSInterface(), "control");
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 		// webView.setWebChromeClient(new WebChromeClient(){});
-		webView.loadUrl("file:///android_asset/washer.html");//下面这行代码要注释掉
+		webView.loadUrl(String.format("%swasher.html", DataCenter.URL));
 		//webView.loadUrl("http://10.18.230.42:8888/github.repo/captcha/washer.html");
 		
 		
